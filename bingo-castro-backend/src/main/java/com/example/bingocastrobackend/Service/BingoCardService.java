@@ -5,6 +5,8 @@ import com.example.bingocastrobackend.Repository.BingoCardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BingoCardService {
 
@@ -26,6 +28,10 @@ public class BingoCardService {
 
     public BingoCard getBingoCardByToken(String token) {
         return bingoCardRepository.getBingoCardByToken(token);
+    }
+
+    public List<String> getAllPlaycardTokens() {
+        return bingoCardRepository.findAllPlaycardTokens();
     }
     // Other methods for CRUD operations or business logic related to BingoCard
 }

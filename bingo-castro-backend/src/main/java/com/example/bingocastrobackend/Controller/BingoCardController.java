@@ -57,5 +57,12 @@ public class BingoCardController {
     public BingoCard getBingoCardByToken(@PathVariable String playcardToken){
         return bingoCardService.getBingoCardByToken(playcardToken);
     }
+
+    @GetMapping("/playcardTokens")
+    public List<String> getAllPlaycardTokens() {
+        return bingoCardService.getAllPlaycardTokens();
+    }
+
+
     // Other CRUD endpoints for BingoCard
 }
