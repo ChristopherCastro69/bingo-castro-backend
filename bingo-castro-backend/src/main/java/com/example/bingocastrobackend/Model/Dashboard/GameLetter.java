@@ -1,4 +1,4 @@
-package com.example.bingocastrobackend.Model.Version2;
+package com.example.bingocastrobackend.Model.Dashboard;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -12,15 +12,15 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class DashboardLetters {
+public class GameLetter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "gameId",  referencedColumnName = "gameId")
+    @JoinColumn(name = "gameId", referencedColumnName = "gameId")
     @JsonIgnore
-    private BingoDashboardTest bingoDashboardTest;
+    private Dashboard dashboard;
 
     @Column(name = "gameLetter")
     private String gameLetter;

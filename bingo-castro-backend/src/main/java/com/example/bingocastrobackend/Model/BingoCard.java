@@ -26,28 +26,6 @@ public class BingoCard {
 
     // Constructor, Getter and Setter methods
 
-//    public int getBingoCardId() {
-//        return bingoCardId;
-//    }
-//
-//    public String getPlaycardToken() {
-//        return playcardToken;
-//    }
-//
-//    public List<BingoLetter> getBingoLetters() {
-//        return bingoLetters;
-//    }
 
-//    public void setBingoCardId(int bingoCardId) {
-//        this.bingoCardId = bingoCardId;
-//    }
-//
-////    public void setPlaycardToken(String playcardToken) {
-////        this.playcardToken = playcardToken;
-////    }
-//
-//    public void setBingoLetters(List<BingoLetter> bingoLetters) {
-//        this.bingoLetters = bingoLetters;
-//    }
 }
 
