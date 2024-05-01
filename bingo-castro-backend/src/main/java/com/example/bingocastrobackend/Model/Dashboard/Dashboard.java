@@ -1,6 +1,5 @@
-package com.example.bingocastrobackend.Model.Version2;
+package com.example.bingocastrobackend.Model.Dashboard;
 
-import com.example.bingocastrobackend.Model.BingoLetter;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BingoDashboardTest {
+public class Dashboard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "gameId")
@@ -21,6 +20,8 @@ public class BingoDashboardTest {
     @Column(name = "gameCode")
     private String gameCode;
 
-    @OneToMany(mappedBy = "bingoDashboardTest", cascade = CascadeType.ALL)
-    private List<BingoLetter> bingoLetters;
+    @OneToMany(mappedBy = "dashboard", cascade = CascadeType.ALL)
+    private List<GameLetter> gameLetters;
+
+
 }

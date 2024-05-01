@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("api/bingo/dashboard/")
+@RequestMapping("api/bingo/dash/")
 public class BingoDashboardController {
     @Autowired
     private BingoDashboardService bingoDashboardService;
